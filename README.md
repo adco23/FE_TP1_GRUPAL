@@ -15,10 +15,10 @@ Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en
 
 | Nombre | GitHub |
 |--------|--------|
-| Alex García | [@alexgarcia](https://github.com) |
-| Sam López | [@samlopez](https://github.com) |
-| Jordan Pérez | [@jordanperez](https://github.com) |
-| Riley Martínez | [@rileymartinez](https://github.com) |
+| Adriana Coronel | [@integrante](https://github.com) |
+| Enrique Saracco | [@integrante](https://github.com) |
+| Lucas Monteras | [@integrante](https://github.com) |
+| Marcela Cordini | [@integrante](https://github.com) |
 
 ---
 
