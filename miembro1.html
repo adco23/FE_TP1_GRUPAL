@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex García | DevTeam</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/member.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">devteam<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bitacora.html">Bitácora</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <a href="index.html" class="back-link">← Volver al equipo</a>
+
+  <main class="member-page">
+
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar av1">🦊</div>
+        <div class="avatar-ring"></div>
+      </div>
+      <div class="profile-meta">
+        <h1 class="profile-name">Alex García</h1>
+        <span class="profile-role">// Frontend Developer</span>
+        <div class="profile-location">
+          <span>📍</span> Buenos Aires, Argentina
+        </div>
+        <div class="profile-badges">
+          <span class="tag" id="ageBadge" data-age="22">22 años</span>
+          <span class="tag">Frontend Dev</span>
+          <span class="tag">Open Source</span>
+        </div>
+
+        <!-- JS: Color theme switcher -->
+        <div class="theme-switcher">
+          <div class="theme-dot active" data-color="#7c3aed" style="background:#7c3aed" title="Morado"></div>
+          <div class="theme-dot" data-color="#0ea5e9" style="background:#0ea5e9" title="Azul"></div>
+          <div class="theme-dot" data-color="#10b981" style="background:#10b981" title="Verde"></div>
+          <div class="theme-dot" data-color="#f59e0b" style="background:#f59e0b" title="Naranja"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content-grid">
+
+      <!-- Skills -->
+      <div class="info-card">
+        <div class="card-title">
+          <span class="card-title-icon">⚡</span> Habilidades
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-name"><span>HTML & CSS</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>JavaScript</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Git & GitHub</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Diseño UI</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Responsive</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About (JS toggle) -->
+      <div class="info-card">
+        <div class="card-title">
+          <span class="card-title-icon">👤</span> Sobre mí
+        </div>
+        <p style="color:var(--text-muted);font-size:.9rem;line-height:1.7;">
+          Estudiante apasionado por el desarrollo web. Me encanta crear interfaces que sean tanto funcionales como visualmente atractivas.
+        </p>
+        <div class="toggle-section" style="margin-top:1rem;">
+          <button class="toggle-btn" data-target="extraInfo1">
+            <span class="arrow">▶</span> Ver más sobre mí
+          </button>
+          <div class="toggle-content" id="extraInfo1">
+            <div class="toggle-inner">
+              Cuando no estoy programando, me encontrás leyendo sobre diseño, jugando videojuegos indie, o explorando nuevas tecnologías. Creo que el buen código y el buen diseño van de la mano.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movies -->
+      <div class="info-card">
+        <div class="card-title">
+          <span class="card-title-icon">🎬</span> Películas favoritas
+        </div>
+        <div class="media-list">
+          <div class="media-item">
+            <span class="media-num">01</span>
+            <div class="media-text">
+              Blade Runner 2049
+              <span class="media-sub">Denis Villeneuve · 2017</span>
+            </div>
+            <span class="media-icon">🎞️</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">02</span>
+            <div class="media-text">
+              Inception
+              <span class="media-sub">Christopher Nolan · 2010</span>
+            </div>
+            <span class="media-icon">🌀</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">03</span>
+            <div class="media-text">
+              Everything Everywhere All at Once
+              <span class="media-sub">Daniels · 2022</span>
+            </div>
+            <span class="media-icon">🥢</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music -->
+      <div class="info-card">
+        <div class="card-title">
+          <span class="card-title-icon">🎵</span> Discos favoritos
+        </div>
+        <div class="media-list">
+          <div class="media-item">
+            <span class="media-num">01</span>
+            <div class="media-text">
+              In Rainbows
+              <span class="media-sub">Radiohead · 2007</span>
+            </div>
+            <span class="media-icon">🌧️</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">02</span>
+            <div class="media-text">
+              Random Access Memories
+              <span class="media-sub">Daft Punk · 2013</span>
+            </div>
+            <span class="media-icon">🤖</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">03</span>
+            <div class="media-text">
+              Kid A
+              <span class="media-sub">Radiohead · 2000</span>
+            </div>
+            <span class="media-icon">👁️</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>DevTeam · TP1 · IFTS N°29 · 2025</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="bitacora.html">Bitácora</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/member.js"></script>
+</body>
+</html>

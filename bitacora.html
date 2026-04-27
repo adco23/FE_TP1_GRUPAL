@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitácora | DevTeam</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/bitacora.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">devteam<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bitacora.html" class="active">Bitácora</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <a href="index.html" class="back-link">← Volver al inicio</a>
+
+  <main class="bitacora-page">
+    <header class="bitacora-header">
+      <span class="section-tag">PROCESO DE DESARROLLO</span>
+      <h1>Bitácora del Proyecto</h1>
+      <p>Registro del proceso de trabajo, decisiones y aprendizajes durante el desarrollo del TP1.</p>
+    </header>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">SEMANA 1 · INICIO</div>
+        <div class="timeline-card">
+          <h3>Kick-off: Definición del equipo y concepto</h3>
+          <p>
+            Nos reunimos por primera vez como equipo para definir el nombre del proyecto y la dirección estética. Decidimos usar un tema oscuro con acentos en violeta, inspirado en portfolios de desarrolladores. Creamos el repositorio en GitHub y definimos la estructura de carpetas siguiendo las buenas prácticas pedidas por la cátedra.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag tag-decision">Decisión: tema dark</span>
+            <span class="tag tag-decision">Decisión: estructura de archivos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">SEMANA 1 · DISEÑO</div>
+        <div class="timeline-card">
+          <h3>Definición de la paleta y tipografía</h3>
+          <p>
+            Elegimos la combinación de <strong>Space Mono</strong> para títulos y elementos de código, y <strong>DM Sans</strong> para el cuerpo de texto. La paleta se centra en violeta (#7c3aed), el color de fondo oscuro (#0c0c18) y variantes claras para textos. Esto le da coherencia visual al sitio completo.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag tag-decision">Decisión: Google Fonts</span>
+            <span class="tag tag-decision">Decisión: CSS Variables</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">SEMANA 2 · DESARROLLO</div>
+        <div class="timeline-card">
+          <h3>Dificultad: Responsive design en la hero section</h3>
+          <p>
+            El layout de dos columnas de la sección hero rompía en pantallas pequeñas. Resolvimos usando <code>grid-template-columns: 1fr 1fr</code> en desktop y cambiando a <code>1fr</code> con <code>order: -1</code> para la parte visual en mobile. También tuvimos que ajustar los tamaños del pixel grid con unidades relativas.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag tag-problem">Problema: layout mobile</span>
+            <span class="tag tag-change">Solución: CSS Grid responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">SEMANA 2 · JAVASCRIPT</div>
+        <div class="timeline-card">
+          <h3>Implementación de interacciones dinámicas</h3>
+          <p>
+            Implementamos las siguientes funciones JS: pixel grid animado con shimmer efecto en el hero, contador animado para las estadísticas del equipo, barras de habilidades que se animan al hacer scroll con <code>IntersectionObserver</code>, y el sistema toggle para expandir/colapsar secciones en cada página de integrante. Centralicemos la lógica compartida en <code>main.js</code>.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag tag-decision">Decisión: IntersectionObserver</span>
+            <span class="tag tag-change">Modularización JS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">SEMANA 3 · CIERRE TP1</div>
+        <div class="timeline-card">
+          <h3>Revisión final y deploy en Vercel</h3>
+          <p>
+            Revisamos que todos los breakpoints funcionen correctamente (400px, 900px, 1200px), que la navegación no requiera el botón "Atrás" del navegador, y que el README esté completo. Hicimos el deploy en Vercel conectando el repositorio de GitHub. Pendiente para TP2: ampliar la bitácora y agregar más funcionalidades interactivas.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag tag-change">Deploy: Vercel</span>
+            <span class="tag tag-decision">README completado</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>DevTeam · TP1 · IFTS N°29 · 2025</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="bitacora.html">Bitácora</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

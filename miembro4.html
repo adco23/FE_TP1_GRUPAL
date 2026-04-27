@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riley Martínez | DevTeam</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/member.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">devteam<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bitacora.html">Bitácora</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <a href="index.html" class="back-link">← Volver al equipo</a>
+
+  <main class="member-page">
+
+    <header class="profile-header">
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar av4">🐢</div>
+        <div class="avatar-ring"></div>
+      </div>
+      <div class="profile-meta">
+        <h1 class="profile-name">Riley Martínez</h1>
+        <span class="profile-role">// Backend Developer</span>
+        <div class="profile-location">
+          <span>📍</span> Mendoza, Argentina
+        </div>
+        <div class="profile-badges">
+          <span class="tag" id="ageBadge" data-age="21">21 años</span>
+          <span class="tag">Backend</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="theme-switcher">
+          <div class="theme-dot active" data-color="#7c3aed" style="background:#7c3aed"></div>
+          <div class="theme-dot" data-color="#10b981" style="background:#10b981"></div>
+          <div class="theme-dot" data-color="#6366f1" style="background:#6366f1"></div>
+          <div class="theme-dot" data-color="#f97316" style="background:#f97316"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-grid">
+
+      <div class="info-card">
+        <div class="card-title"><span class="card-title-icon">⚡</span> Habilidades</div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-name"><span>Python</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>REST APIs</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Git & CLI</span><span>78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Testing</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Seguridad Web</span><span>60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-title"><span class="card-title-icon">👤</span> Sobre mí</div>
+        <p style="color:var(--text-muted);font-size:.9rem;line-height:1.7;">
+          Me especializo en el backend y la arquitectura de sistemas. Me interesa que el código sea robusto, seguro y bien documentado.
+        </p>
+        <div class="toggle-section" style="margin-top:1rem;">
+          <button class="toggle-btn" data-target="extraInfo4">
+            <span class="arrow">▶</span> Ver más sobre mí
+          </button>
+          <div class="toggle-content" id="extraInfo4">
+            <div class="toggle-inner">
+              Fuera del código, me apasiona el senderismo y la astronomía. También participo en comunidades locales de tecnología y organizo meetups de programación.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-title"><span class="card-title-icon">🎬</span> Películas favoritas</div>
+        <div class="media-list">
+          <div class="media-item">
+            <span class="media-num">01</span>
+            <div class="media-text">2001: A Space Odyssey<span class="media-sub">Kubrick · 1968</span></div>
+            <span class="media-icon">🚀</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">02</span>
+            <div class="media-text">Arrival<span class="media-sub">Villeneuve · 2016</span></div>
+            <span class="media-icon">🛸</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">03</span>
+            <div class="media-text">Moon<span class="media-sub">Duncan Jones · 2009</span></div>
+            <span class="media-icon">🌕</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-title"><span class="card-title-icon">🎵</span> Discos favoritos</div>
+        <div class="media-list">
+          <div class="media-item">
+            <span class="media-num">01</span>
+            <div class="media-text">Yoshimi Battles the Pink Robots<span class="media-sub">Flaming Lips · 2002</span></div>
+            <span class="media-icon">🤖</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">02</span>
+            <div class="media-text">Selected Ambient Works<span class="media-sub">Aphex Twin · 1992</span></div>
+            <span class="media-icon">🌌</span>
+          </div>
+          <div class="media-item">
+            <span class="media-num">03</span>
+            <div class="media-text">Homework<span class="media-sub">Daft Punk · 1997</span></div>
+            <span class="media-icon">🏠</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>DevTeam · TP1 · IFTS N°29 · 2025</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="bitacora.html">Bitácora</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/member.js"></script>
+</body>
+</html>
