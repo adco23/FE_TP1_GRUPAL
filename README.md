@@ -1,13 +1,13 @@
-# DevTeam — TP1
+# AppMinds — TP1
 
-**[🚀 Ver sitio en Vercel →](https://devteam-tp1.vercel.app)**  
+**[🚀 Ver sitio en Vercel →](https://AppMinds-tp1.vercel.app)**  
 *Reemplazar el link con el URL real después del deploy.*
 
 ---
 
 ## Descripción del Proyecto
 
-Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en IFTS N°29. El sitio presenta al equipo DevTeam, con una portada principal, páginas individuales para cada integrante (con foto, datos personales, habilidades, películas y discos favoritos), y una sección de bitácora que documenta el proceso de desarrollo. El objetivo es poner en práctica HTML, CSS y JavaScript puros, con diseño responsive y buenas prácticas de organización de archivos.
+Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en IFTS N°29. El sitio presenta al equipo AppMinds, con una portada principal, páginas individuales para cada integrante (con foto, datos personales, habilidades, películas y discos favoritos), y una sección de bitácora que documenta el proceso de desarrollo. El objetivo es poner en práctica HTML, CSS y JavaScript puros, con diseño responsive y buenas prácticas de organización de archivos.
 
 ---
 
@@ -15,10 +15,10 @@ Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en
 
 | Nombre | GitHub |
 |--------|--------|
-| Alex García | [@alexgarcia](https://github.com) |
-| Sam López | [@samlopez](https://github.com) |
-| Jordan Pérez | [@jordanperez](https://github.com) |
-| Riley Martínez | [@rileymartinez](https://github.com) |
+| Adriana Coronel | [@integrante](https://github.com) |
+| Enrique Saracco | [@integrante](https://github.com) |
+| Lucas Monteras | [@integrante](https://github.com) |
+| Marcela Cordini | [@integrante](https://github.com) |
 
 ---
 
@@ -39,7 +39,7 @@ Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en
 tp1-project/
 │
 ├── index.html          → Portada principal del equipo
-├── miembro1.html       → Tarjeta individual: Alex García
+├── adriana.html       → Tarjeta individual: Adriana Coronel
 ├── miembro2.html       → Tarjeta individual: Sam López
 ├── miembro3.html       → Tarjeta individual: Jordan Pérez
 ├── miembro4.html       → Tarjeta individual: Riley Martínez
@@ -136,7 +136,7 @@ tp1-project/
 
 ## Enlace al Proyecto Desplegado
 
-🔗 **[https://devteam-tp1.vercel.app](https://devteam-tp1.vercel.app)**  
+🔗 **[https://AppMinds-tp1.vercel.app](https://AppMinds-tp1.vercel.app)**  
 *(Reemplazar con el link real después del deploy en Vercel)*
 
 ---
