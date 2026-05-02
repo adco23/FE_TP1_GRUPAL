@@ -136,6 +136,10 @@
 .avatar-pixel {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 .av1 { background: linear-gradient(135deg, #7c3aed, #ec4899); }
 .av2 { background: linear-gradient(135deg, #22d3ee, #7c3aed); }
