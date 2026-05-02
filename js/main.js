@@ -1,5 +1,5 @@
 /* =========================================
-   MAIN JS - DevTeam TP1
+   MAIN JS - AppMinds TP1
    Global interactions shared across pages
    ========================================= */
 
