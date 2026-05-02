@@ -42,7 +42,7 @@ tp1-project/
 ├── adriana.html       → Tarjeta individual: Adriana Coronel
 ├── miembro2.html       → Tarjeta individual: Sam López
 ├── miembro3.html       → Tarjeta individual: Jordan Pérez
-├── miembro4.html       → Tarjeta individual: Riley Martínez
+├── miembro4.html       → Tarjeta individual: Enrique Saracco
 ├── bitacora.html       → Sección bitácora del proyecto
 │
 ├── css/

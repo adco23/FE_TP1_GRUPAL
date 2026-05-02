@@ -1,0 +1,6 @@
+git add .
+
+git commit -m "Actualicé README, index y miembro4 con los datos de Enrique"
+
+git push origin enrique
+
