@@ -15,10 +15,10 @@ Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en
 
 | Nombre | GitHub |
 |--------|--------|
-| Adriana Coronel | [@integrante](https://github.com) |
-| Enrique Saracco | [@integrante](https://github.com) |
-| Lucas Monteras | [@integrante](https://github.com) |
-| Marcela Cordini | [@integrante](https://github.com) |
+| Adriana Coronel | [@adco23](https://github.com/adco23) |
+| Enrique Saracco | [@ewsaracco](https://github.com/ewsaracco) |
+| Lucas Monteras | [@lucasmonteras](https://github.com/lucasmonteras) |
+| Marcela Cordini | [@marcelacordini](https://github.com/marcelacordini) |
 
 ---
 
@@ -40,8 +40,8 @@ tp1-project/
 │
 ├── index.html          → Portada principal del equipo
 ├── adriana.html       → Tarjeta individual: Adriana Coronel
-├── miembro2.html       → Tarjeta individual: Sam López
-├── miembro3.html       → Tarjeta individual: Jordan Pérez
+├── enrique.html       → Tarjeta individual: Sam López
+├── marcela.html       → Tarjeta individual: Jordan Pérez
 ├── enrique.html       → Tarjeta individual: Enrique Saracco
 ├── bitacora.html       → Sección bitácora del proyecto
 │

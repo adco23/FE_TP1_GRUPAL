@@ -225,16 +225,17 @@
 
     items.forEach(item => {
       item.addEventListener("mouseenter", (e) => {
+        const TYPE_ALBUM = "album";
         const image = item.dataset.image;
         const type = item.dataset.type;
 
         popupImg.src = image;
         popup.classList.add("active");
 
-        if (type === "album") {
-          popup.classList.add("album");
+        if (type === TYPE_ALBUM) {
+          popup.classList.add(TYPE_ALBUM);
         } else {
-          popup.classList.remove("album");
+          popup.classList.remove(TYPE_ALBUM);
         }
 
         popup.style.top = e.clientY + 20 + "px";
