@@ -104,7 +104,7 @@ tp1-project/
 | `btnSurprise click` | Al hacer clic en "Conócenos", muestra mensajes rotativos presentando al equipo | Hero section |
 | `animateCounters()` | Cuenta animada desde 0 hasta el valor objetivo al hacer scroll sobre las stats | Sección de estadísticas |
 
-### `miembro1.html` — `miembro4.html` (integrantes)
+### Integrantes
 
 | Función | Descripción | Ubicación |
 |---------|-------------|-----------|
@@ -118,26 +118,27 @@ tp1-project/
 
 ## Capturas de Pantalla
 
-> *(Agregar capturas tras el deploy)*
+**Portada Desktop:**
 
-**Portada Desktop:**  
-![Portada](img/screenshot-home.png)
+![Portada desktop 1](img/screenshot/portada_desk_01.gif)
+![Portada desktop 2](img/screenshot/portada_desk_02.gif)
 
-**Portada Mobile:**  
-![Mobile](img/screenshot-mobile.png)
+**Portada Mobile:**
 
-**Página Integrante:**  
-![Integrante](img/screenshot-member.png)
+![Portada mobile](img/screenshot/portada_mobile.png)
 
-**Bitácora:**  
-![Bitácora](img/screenshot-bitacora.png)
+**Página Integrante:**
+![Integrante](img/screenshot/perfil_integrante.gif)
+
+**Bitácora:**
+![Bitácora](img/screenshot/bitacora_desk.png)
+![Bitácora mobile](img/screenshot/bitacora_mobile.png)
 
 ---
 
 ## Enlace al Proyecto Desplegado
 
-🔗 **[https://AppMinds-tp1.vercel.app](https://AppMinds-tp1.vercel.app)**  
-*(Reemplazar con el link real después del deploy en Vercel)*
+🔗 **[https://app-minds.vercel.app](https://app-minds.vercel.app/)**
 
 ---
 
@@ -158,9 +159,6 @@ tp1-project/
 
 ### Imágenes
 
-- Los avatares utilizan emojis de animales en lugar de fotos reales, respetando la privacidad.
-- No se generaron imágenes con IA en esta versión del TP.
+- Los avatares utilizan emojis/avatares en lugar de fotos reales, respetando la privacidad.
 
 ---
-
-*Este README será ampliado en los TP2 y TP3 con nuevas funcionalidades, mejoras y capturas actualizadas.*
