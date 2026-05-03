@@ -39,10 +39,10 @@ Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en
 tp1-project/
 │
 ├── index.html          → Portada principal del equipo
-├── adriana.html       → Tarjeta individual: Adriana Coronel
-├── enrique.html       → Tarjeta individual: Sam López
-├── marcela.html       → Tarjeta individual: Jordan Pérez
-├── enrique.html       → Tarjeta individual: Enrique Saracco
+├── adriana.html        → Tarjeta individual: Adriana Coronel
+├── enrique.html        → Tarjeta individual: Enrique Saracco
+├── lucas.html          → Tarjeta individual: Lucas Monteras
+├── marcela.html        → Tarjeta individual: Marcela Cordini
 ├── bitacora.html       → Sección bitácora del proyecto
 │
 ├── css/
