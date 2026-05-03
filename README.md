@@ -1,7 +1,6 @@
 # AppMinds — TP1
 
-**[🚀 Ver sitio en Vercel →](https://AppMinds-tp1.vercel.app)**  
-*Reemplazar el link con el URL real después del deploy.*
+**[🚀 Ver sitio en Vercel →](https://app-minds.vercel.app/)**
 
 ---
 
@@ -36,7 +35,7 @@ Proyecto web grupal desarrollado para el Trabajo Práctico N°1 de la materia en
 ## Estructura de Archivos
 
 ```
-tp1-project/
+/
 │
 ├── index.html          → Portada principal del equipo
 ├── adriana.html        → Tarjeta individual: Adriana Coronel
@@ -90,7 +89,6 @@ tp1-project/
 ### Iconografía
 
 - Se utilizan emojis como iconografía liviana (sin librerías externas)
-- Los avatares de los integrantes son representaciones con emojis de animales, respetando la privacidad solicitada por la cátedra
 
 ---
 
@@ -156,9 +154,5 @@ tp1-project/
 - **Textos:** Las descripciones de integrantes, la bitácora y la sección "Sobre mí" fueron generadas con asistencia de IA y luego editadas por cada integrante.
 - **CSS:** La IA ayudó a resolver el bug de responsive en el hero layout (grid 2 cols → 1 col) y a optimizar las transiciones de las barras de habilidades.
 - **JS:** La lógica del `IntersectionObserver` para las skill bars y el pixel grid animado fueron desarrollados con asistencia de IA para la estructura base, adaptados al contexto del proyecto.
-
-### Imágenes
-
-- Los avatares utilizan emojis/avatares en lugar de fotos reales, respetando la privacidad.
 
 ---
