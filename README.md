@@ -41,7 +41,7 @@ tp1-project/
 ├── index.html          → Portada principal del equipo
 ├── miembro1.html       → Tarjeta individual: Alex García
 ├── miembro2.html       → Tarjeta individual: Sam López
-├── miembro3.html       → Tarjeta individual: Jordan Pérez
+├── lucas.html          → Tarjeta individual: Lucas Monteras
 ├── miembro4.html       → Tarjeta individual: Riley Martínez
 ├── bitacora.html       → Sección bitácora del proyecto
 │
