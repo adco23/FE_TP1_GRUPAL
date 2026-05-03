@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adriana Coronel | AppMinds</title>
+  <title>Adriana | AppMinds</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/member.css" />
+  <style>
+    .media-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 320px;
+      background: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 999;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .media-popup.album {
+      width: 300px;
+      height: 300px;
+    }
+
+    .media-popup img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .media-popup.active {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -109,27 +141,27 @@
           <span class="card-title-icon">🎬</span> Películas favoritas
         </div>
         <div class="media-list">
-          <div class="media-item">
+          <div class="media-item" data-image="img/adriana/chihiro.jpg">
             <span class="media-num">01</span>
             <div class="media-text">
-              Blade Runner 2049
-              <span class="media-sub">Denis Villeneuve · 2017</span>
+              El viaje de Chihiro
+              <span class="media-sub">Hayao Miyazaki · 2003</span>
             </div>
             <span class="media-icon">🎞️</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/adriana/budapest.jpg">
             <span class="media-num">02</span>
             <div class="media-text">
-              Inception
-              <span class="media-sub">Christopher Nolan · 2010</span>
+              The Grand Budapest Hotel
+              <span class="media-sub">Wes Anderson · 2014</span>
             </div>
             <span class="media-icon">🌀</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/adriana/bastardos.jpg">
             <span class="media-num">03</span>
             <div class="media-text">
-              Everything Everywhere All at Once
-              <span class="media-sub">Daniels · 2022</span>
+              Inglourious Basterds
+              <span class="media-sub">Quentin Tarantino · 2009</span>
             </div>
             <span class="media-icon">🥢</span>
           </div>
@@ -142,29 +174,29 @@
           <span class="card-title-icon">🎵</span> Discos favoritos
         </div>
         <div class="media-list">
-          <div class="media-item">
+          <div class="media-item" data-image="img/adriana/arirang.jpg" data-type="album">
             <span class="media-num">01</span>
             <div class="media-text">
-              In Rainbows
-              <span class="media-sub">Radiohead · 2007</span>
+              Arirang
+              <span class="media-sub">BTS · 2026</span>
             </div>
-            <span class="media-icon">🌧️</span>
+            <span class="media-icon">✨</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/adriana/smile.jpg" data-type="album">
             <span class="media-num">02</span>
             <div class="media-text">
-              Random Access Memories
-              <span class="media-sub">Daft Punk · 2013</span>
+              Smile
+              <span class="media-sub">Eve · 2020</span>
             </div>
-            <span class="media-icon">🤖</span>
+            <span class="media-icon">🎶</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/adriana/awake.jpg" data-type="album">
             <span class="media-num">03</span>
             <div class="media-text">
-              Kid A
-              <span class="media-sub">Radiohead · 2000</span>
+              Awake & Build
+              <span class="media-sub">Yama · 2024</span>
             </div>
-            <span class="media-icon">👁️</span>
+            <span class="media-icon">🎧</span>
           </div>
         </div>
       </div>
@@ -180,7 +212,63 @@
     </div>
   </footer>
 
+  <div id="moviePopup" class="media-popup">
+    <img id="popupImage" src="" alt="poster" />
+  </div>
+
   <script src="js/main.js"></script>
   <script src="js/member.js"></script>
+  <script>
+    const items = document.querySelectorAll(".media-item");
+    const popup = document.getElementById("moviePopup");
+    const popupImg = document.getElementById("popupImage");
+
+    items.forEach(item => {
+      item.addEventListener("mouseenter", (e) => {
+        const image = item.dataset.image;
+        const type = item.dataset.type;
+
+        popupImg.src = image;
+        popup.classList.add("active");
+
+        if (type === "album") {
+          popup.classList.add("album");
+        } else {
+          popup.classList.remove("album");
+        }
+
+        popup.style.top = e.clientY + 20 + "px";
+        popup.style.left = e.clientX + 20 + "px";
+      });
+
+      const offset = 20;
+
+      item.addEventListener("mousemove", (e) => {
+        let x = e.clientX + offset;
+        let y = e.clientY + offset;
+
+        const popupWidth = 220;
+        const popupHeight = 320;
+
+        if (x + popupWidth > window.innerWidth) {
+          x = e.clientX - popupWidth - offset;
+        }
+
+        if (y + popupHeight > window.innerHeight) {
+          y = e.clientY - popupHeight - offset;
+        }
+
+        popup.style.left = x + "px";
+        popup.style.top = y + "px";
+      });
+
+      item.addEventListener("mouseleave", () => {
+        popup.classList.remove("active");
+        popupImg.src = "";
+      });
+    });
+  </script>
 </body>
+
+
 </html>
