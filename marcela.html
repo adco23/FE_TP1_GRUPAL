@@ -6,6 +6,39 @@
   <title>Marcela Cordini | Data Analyst</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/member.css" />
+  <style>
+    .media-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 320px;
+      background: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 999;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .media-popup.album {
+      width: 300px;
+      height: 300px;
+    }
+
+    .media-popup img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .media-popup.active {
+      opacity: 1;
+    }
+  </style>
+</head>
 </head>
 <body>
   <nav class="navbar">
@@ -25,7 +58,9 @@
 
     <header class="profile-header">
       <div class="profile-avatar-wrap">
-        <div class="profile-avatar av2">🐧</div>
+        <div class="profile-avatar av2">
+          <img src="img/marcela/perfil.png" class="avatar-image">
+        </div>
         <div class="avatar-ring"></div>
       </div>
       <div class="profile-meta">
@@ -95,18 +130,23 @@
 
       <div class="info-card">
         <div class="card-title"><span class="card-title-icon">🎬</span> Películas favoritas</div>
+        
         <div class="media-list">
-          <div class="media-item">
+          <div class="media-item" data-image="img/marcela/La la land.jpg">
             <span class="media-num">01</span>
-            <div class="media-text">La La Land<span class="media-sub">2016 · Damien Chazelle</span></div>
+            <div class="media-text">
+              La La Land
+              <span class="media-sub">2016 · Damien Chazelle</span>
+            </div>
             <span class="media-icon">💌</span>
           </div>
-          <div class="media-item">
+ 
+          <div class="media-item" data-image="img/marcela/Notting Hill.jpg">
             <span class="media-num">02</span>
             <div class="media-text">Notting Hill<span class="media-sub">1999 · Roger Michell</span></div>
             <span class="media-icon">💏</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/marcela/Crash.jpg">
             <span class="media-num">03</span>
             <div class="media-text">Crash<span class="media-sub">2004 · Paul Haggis</span></div>
             <span class="media-icon">💥</span>
@@ -117,17 +157,17 @@
       <div class="info-card">
         <div class="card-title"><span class="card-title-icon">🎵</span> Discos favoritos</div>
         <div class="media-list">
-          <div class="media-item">
+          <div class="media-item" data-image="img/marcela/NTVG.jpg" data-type="album">
             <span class="media-num">01</span>
             <div class="media-text">NTVG Acustico<span class="media-sub">NTVG · 2019</span></div>
             <span class="media-icon">🌅</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/marcela/Alfie.jpg" data-type="album">
             <span class="media-num">02</span>
             <div class="media-text">Alfie Soundtrack<span class="media-sub">Mick Jagger y David Stewart · 2004</span></div>
             <span class="media-icon">🍸</span>
           </div>
-          <div class="media-item">
+          <div class="media-item" data-image="img/marcela/Mucho.jpg" data-type="album">
             <span class="media-num">03</span>
             <div class="media-text">Mucho<span class="media-sub">Babasónicos · 2008</span></div>
             <span class="media-icon">🚬</span>
@@ -146,7 +186,64 @@
     </div>
   </footer>
 
+    <div id="moviePopup" class="media-popup">
+    <img id="popupImage" src="" alt="poster" />
+  </div>
+
   <script src="js/main.js"></script>
   <script src="js/member.js"></script>
+  <script>
+    const items = document.querySelectorAll(".media-item");
+    const popup = document.getElementById("moviePopup");
+    const popupImg = document.getElementById("popupImage");
+
+    items.forEach(item => {
+      item.addEventListener("mouseenter", (e) => {
+        const TYPE_ALBUM = "album";
+        const image = item.dataset.image;
+        const type = item.dataset.type;
+
+        popupImg.src = image;
+        popup.classList.add("active");
+
+        if (type === TYPE_ALBUM) {
+          popup.classList.add(TYPE_ALBUM);
+        } else {
+          popup.classList.remove(TYPE_ALBUM);
+        }
+
+        popup.style.top = e.clientY + 20 + "px";
+        popup.style.left = e.clientX + 20 + "px";
+      });
+
+      const offset = 20;
+
+      item.addEventListener("mousemove", (e) => {
+        let x = e.clientX + offset;
+        let y = e.clientY + offset;
+
+        const popupWidth = 220;
+        const popupHeight = 320;
+
+        if (x + popupWidth > window.innerWidth) {
+          x = e.clientX - popupWidth - offset;
+        }
+
+        if (y + popupHeight > window.innerHeight) {
+          y = e.clientY - popupHeight - offset;
+        }
+
+        popup.style.left = x + "px";
+        popup.style.top = y + "px";
+      });
+
+      item.addEventListener("mouseleave", () => {
+        popup.classList.remove("active");
+        popupImg.src = "";
+      });
+    });
+  </script>
 </body>
+
+
 </html>
